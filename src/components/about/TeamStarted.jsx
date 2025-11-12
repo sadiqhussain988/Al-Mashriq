@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { FaRocket, FaEye } from "react-icons/fa";
+import { FaUsersCog, FaPlayCircle } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -10,14 +10,14 @@ const TeamStarted = () => {
 
   const features = [
     {
-      icon: <FaRocket className="text-5xl text-[#FFBC3B]" />,
+      icon: <FaUsersCog className="text-5xl text-[#FFBC3B]" />,
       title: "Our Team",
       description:
         "Meet our team of dedicated professionals, including financial analysts, portfolio managers, and customer support staff, who work tirelessly to provide you with the best possible investment experience. We are passionate about helping you achieve your financial dreams.",
       aos: "fade-down",
     },
     {
-      icon: <FaEye className="text-5xl text-[#FFBC3B]" />,
+      icon: <FaPlayCircle className="text-5xl text-[#FFBC3B]" />,
       title: "Get Started",
       description:
         "Whether you are a seasoned investor or just beginning your investment journey, SoneriTrade is here to assist you every step of the way. We invite you to explore our website, learn more about our services, and get in touch with us to discover how we can help you grow your wealth and secure your financial future. Invest with confidence. Invest with SoneriTrade.",
@@ -26,14 +26,14 @@ const TeamStarted = () => {
   ];
 
   return (
-    <section className="w-full bg-[#1A1A37] text-white py-20 px-6">
+    <section className="w-full bg-[#1A1A37] text-white py-14 md:py-20 px-3 md:px-6 border-b-1">
       {/* Section Heading */}
       <div className="text-center mb-14">
         <h2
           data-aos="fade-down"
-          className="text-4xl md:text-5xl font-bold text-[#FFBC3B]"
+          className="text-5xl md:text-5xl font-bold text-[#FFBC3B]"
         >
-          Our Team <span className="text-white">&</span> Get Started
+          Team <span className="text-white">&</span> Started
         </h2>
       </div>
 
@@ -44,7 +44,7 @@ const TeamStarted = () => {
             key={index}
             data-aos={feature.aos}
             data-aos-delay={index * 150}
-            className="relative bg-[#2A2A55] p-8 rounded-2xl shadow-lg text-center hover:shadow-2xl transition-transform duration-300 transform hover:-translate-y-2 overflow-hidden group"
+            className="relative bg-[#2A2A55] p-4 md:p-8 rounded-2xl shadow-lg text-center hover:shadow-2xl transition-transform duration-300 transform hover:-translate-y-2 overflow-hidden group"
           >
             {/* TOP Lines - start center, expand left/right */}
             <span className="absolute top-0 left-1/2 w-0 h-[2px] bg-[#FFBC3B] group-hover:w-1/2 transition-all duration-500 origin-left"></span>

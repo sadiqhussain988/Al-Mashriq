@@ -29,7 +29,7 @@ const MissionVision = () => {
   ];
 
   return (
-    <section className="w-full bg-[#1A1A37] text-white py-20 px-6">
+    <section className="w-full bg-[#1A1A37] text-white py-14 md:py-20 px-3 md:px-6">
       {/* Section Heading */}
       <div className="text-center mb-14">
         <h2
@@ -47,7 +47,7 @@ const MissionVision = () => {
             key={index}
             data-aos={feature.aos}
             data-aos-delay={index * 150}
-            className="relative bg-[#2A2A55] p-8 rounded-2xl shadow-lg text-center hover:shadow-2xl transition-transform duration-300 transform hover:-translate-y-2 overflow-hidden group"
+            className="relative bg-[#2A2A55] p-4 md:p-8 rounded-2xl shadow-lg text-center hover:shadow-2xl transition-transform duration-300 transform hover:-translate-y-2 overflow-hidden group"
           >
             {/* Left Line (Top → Bottom) */}
             <div className="absolute left-0 top-0 w-1 h-0 bg-[#FFBC3B] transition-all duration-500 group-hover:h-full"></div>

@@ -2,6 +2,7 @@ import "./App.css";
 import Footer from "./components/common/Footer";
 import LoginPage from "./components/common/Login";
 import Navbar from "./components/common/Navbar";
+import FrequentlyAsked from "./components/common/FrequentlyAsked";
 import RegisterPage from "./components/common/RegisterPage";
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -29,6 +30,7 @@ const router = createBrowserRouter([
       { path: "/package", element: <Packages /> },
       { path: "/login", element: <LoginPage /> },
       { path: "/register", element: <RegisterPage /> },
+      { path: "/frequentlyasked", element: <FrequentlyAsked /> },
     ],
   },
 ]);
