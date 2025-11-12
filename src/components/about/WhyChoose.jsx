@@ -48,7 +48,7 @@ const WhyChoose = () => {
   };
 
   return (
-    <section className="w-full bg-white text-[#1A1A37] py-14 md:py-20 px-3 md:px-6">
+    <section className="w-full bg-white text-[#1A1A37] py-14 md:py-18 px-3 md:px-6">
       {/* Heading */}
       <div className="text-center mb-14" data-aos="fade-down">
         <h2 className="text-4xl md:text-5xl font-bold text-[#1A1A37]">

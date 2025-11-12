@@ -26,7 +26,7 @@ const TeamStarted = () => {
   ];
 
   return (
-    <section className="w-full bg-[#1A1A37] text-white py-14 md:py-20 px-3 md:px-6 border-b-1">
+    <section className="w-full bg-[#1A1A37] text-white py-14 md:py-18 px-3 md:px-6 border-b-1">
       {/* Section Heading */}
       <div className="text-center mb-14">
         <h2

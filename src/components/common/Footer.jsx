@@ -23,9 +23,9 @@ const Footer = () => {
   const companyLinks = [
     { name: "Home", href: "/" },
     { name: "About Us", href: "/about" },
-    { name: "FAQ", href: "/frequentlyaskedquestions" },
+    { name: "FAQ", href: "/frequentlyasked" },
     { name: "Privacy Policy", href: "/privacypolicy" },
-    { name: "Terms & Conditions", href: "/terms&conditions" },
+    { name: "Terms & Conditions", href: "/termsconditions" },
   ];
 
   const services = [

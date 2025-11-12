@@ -9,7 +9,7 @@ const AboutSection = () => {
     }, []);
 
     return (
-        <section className="w-full bg-white py-14 md:py-20">
+        <section className="w-full bg-white py-14 md:py-18">
             <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center px-6 gap-10 overflow-hidden">
                 {/* Left Side: Text */}
                 <div className="flex-1 space-y-6">

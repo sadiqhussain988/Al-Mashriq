@@ -1,14 +1,16 @@
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import "./App.css";
-import Footer from "./components/common/Footer";
-import LoginPage from "./components/common/Login";
 import Navbar from "./components/common/Navbar";
-import FrequentlyAsked from "./components/common/FrequentlyAsked";
-import RegisterPage from "./components/common/RegisterPage";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Packages from "./pages/Package";
+import LoginPage from "./components/common/Login";
+import RegisterPage from "./components/common/RegisterPage";
+import FrequentlyAsked from "./components/common/FrequentlyAsked";
+import PrivacyPolicy from "./components/common/PrivacyPolicy";
+import TermsConditions from "./components/common/TermsConditions";
 
-import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
+import Footer from "./components/common/Footer";
 
 const MainLayout = () => {
   return (
@@ -31,6 +33,8 @@ const router = createBrowserRouter([
       { path: "/login", element: <LoginPage /> },
       { path: "/register", element: <RegisterPage /> },
       { path: "/frequentlyasked", element: <FrequentlyAsked /> },
+      { path: "/privacypolicy", element: <PrivacyPolicy /> },
+      { path: "/termsconditions", element: <TermsConditions /> },
     ],
   },
 ]);
