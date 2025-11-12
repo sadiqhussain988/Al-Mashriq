@@ -1,10 +1,10 @@
 import React from 'react'
-import Hero from '../components/Home/Hero'
-import FeaturesSection from '../components/Home/FeaturesSection'
-import InfoSection from '../components/Home/InfoSection'
-import BasicTrading from '../components/Home/BasicTrading'
-import Trade from '../components/Home/Trade'
-import CenteredSection from '../components/Home/CenterSection'
+import Hero from '../components/home/Hero'
+import FeaturesSection from '../components/home/FeaturesSection'
+import InfoSection from '../components/home/InfoSection'
+import BasicTrading from '../components/home/BasicTrading'
+import Trade from '../components/home/Trade'
+import CenteredSection from '../components/home/CenterSection'
 
 
 function Home() {
