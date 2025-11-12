@@ -4,6 +4,7 @@ import FeaturesSection from '../components/home/FeaturesSection'
 import InfoSection from '../components/home/InfoSection'
 import BasicTrading from '../components/home/BasicTrading'
 import Trade from '../components/home/Trade'
+import MarketTrends from '../components/home/MarketTrends'
 import CenteredSection from '../components/home/CenterSection'
 
 
@@ -15,6 +16,7 @@ function Home() {
         <InfoSection/>
         <BasicTrading/>
         <Trade/>
+        <MarketTrends/>
         <CenteredSection/>
     </div>
   )
