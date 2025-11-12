@@ -205,7 +205,7 @@ const Footer = () => {
             transition={{ duration: 0.8 }}
             className="text-[#F5EBDD]/70 text-sm text-center md:text-left"
           >
-            Copyright © {currentYear} <span className="font-semibold text-[#FFFFFF]">designed & developed by</span> Almashriq Invest
+            Copyright © {currentYear} <span className="font-semibold text-[#FFFFFF]">designed & developed by</span> Al-mashriq Invest
           </motion.p>
 
           <motion.div
