@@ -1,5 +1,6 @@
 // HeroCarousel.jsx
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
@@ -76,13 +77,14 @@ const Hero = () => {
                   {slide.description}
                 </p>
 
-                <button
+                <Link 
                   data-aos={slide.animations.button}
                   data-aos-delay="400"
+                  to="/login"
                   className="bg-[#FFBC3B] hover:bg-[#e6ad34] px-6 py-3 rounded-full font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg shadow-[#FFBC3B]/40"
                 >
                   {slide.button}
-                </button>
+                </Link>
               </div>
             </div>
           </SwiperSlide>

@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -27,15 +28,16 @@ const CenteredSection = () => {
       </p>
 
       {/* Button */}
-      <button
+      <Link
         data-aos="zoom-in"
         data-aos-delay="400"
+        to="/register"
         className="bg-white hover:bg-[#e6ad34] text-[#1A1A37] hover:text-white font-semibold 
                    px-8 py-3 rounded-full text-lg shadow-lg shadow-[#FFBC3B]/30 
                    transition-transform duration-300 hover:scale-105"
       >
         Join Now
-      </button>
+      </Link>
     </section>
   );
 };

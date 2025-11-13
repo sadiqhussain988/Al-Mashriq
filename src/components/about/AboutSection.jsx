@@ -1,5 +1,6 @@
 // InfoSection.jsx
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -34,13 +35,14 @@ const AboutSection = () => {
                         We are a leading financial services provider dedicated to helping individuals and businesses achieve their financial goals through smart and strategic investments.
 
                     </p>
-                    <button
+                    <Link
                         data-aos="zoom-in"
                         data-aos-delay="400"
+                        to="/"
                         className="text-[#FFBC3B] hover:text-[#1A1A37] border border-[#FFBC3B] hover:bg-[#e6ad34] px-6 py-3 rounded-full font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg shadow-[#FFBC3B]/40"
                     >
                         Start Now
-                    </button>
+                    </Link>
                 </div>
 
                 {/* Right Side: Image */}
