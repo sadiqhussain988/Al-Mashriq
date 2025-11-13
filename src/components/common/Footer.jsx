@@ -29,15 +29,15 @@ const Footer = () => {
   ];
 
   const services = [
-    { name: "NTN Certificate", href: "/ntncertificate" },
-    { name: "SECP Certificate", href: "/secpcertificate" },
+    { name: "NTN Certificate", href: "/" },
+    { name: "SECP Certificate", href: "/" },
   ];
 
   const socialLinks = [
-    { icon: FaFacebook, href: "https://facebook.com/bageljoon", label: "Facebook" },
-    { icon: FaInstagram, href: "https://instagram.com/bageljoon", label: "Instagram" },
-    { icon: FaTwitter, href: "https://twitter.com/bageljoon", label: "Twitter" },
-    { icon: FaLinkedin, href: "https://linkedin.com/company/bageljoon", label: "LinkedIn" },
+    { icon: FaFacebook, href: "https://facebook.com/almashriqinvest", label: "Facebook" },
+    { icon: FaInstagram, href: "https://instagram.com/almashriqinvest", label: "Instagram" },
+    { icon: FaTwitter, href: "https://twitter.com/almashriqinvest", label: "Twitter" },
+    { icon: FaLinkedin, href: "https://linkedin.com/company/almashriqinvest", label: "LinkedIn" },
   ];
 
   return (
@@ -97,11 +97,17 @@ const Footer = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <div className="flex items-center gap-3">
-            <h1 className="text-white font-bold text-3xl transform transition-transform duration-300 hover:scale-105 cursor-pointer">
-              Almashriq<span className="text-[#FFBC3B]">Invest</span>
-            </h1>
-          </div>
+         <div className="flex items-center gap-1">
+  <img
+    src="/logo.png"
+    alt="Almashriq Invest Logo"
+    className="w-9 h-9 object-contain"
+  />
+  <h1 className="hidden sm:block text-white font-bold text-xl transform transition-transform duration-300 hover:scale-105 cursor-pointer">
+    Almashriq<span className="text-[#FFBC3B]">Invest</span>
+  </h1>
+</div>
+
           <p className="text-[#F5EBDD]/90 text-sm leading-relaxed max-w-xs">
             Block No.1, Karachi <br /> 
             <span className="font-semibold text-[#FFFFFF]">WhatsApp: 03370338499</span> <br />

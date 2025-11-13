@@ -17,10 +17,20 @@ const Navbar = () => {
   return (
     <nav className="fixed w-full z-50 shadow-lg">
       <div className="flex">
-        {/* Left half - Logo */}
-        <div className="w-1/2 bg-[#1A1A37] flex items-center px-6 h-20">
-          <Link to="/" className="text-white font-bold text-3xl transform transition-transform duration-300 hover:scale-105 cursor-pointer">
-            Almashriq<span className="text-[#FFBC3B]">Invest</span>
+        {/* Left Section - Logo */}
+        <div className="flex items-center gap-3 w-1/2 bg-[#1A1A37] px-6 h-20">
+          <Link
+            to="/"
+            className="flex items-center gap-1 text-white font-bold text-3xl hover:scale-105 transition-transform duration-300 cursor-pointer"
+          >
+            <img
+              src="/logo.png"
+              alt="Almashriq Invest Logo"
+              className="w-13 h-13 object-contain"
+            />
+            <span className="hidden sm:inline">
+              Almashriq<span className="text-[#FFBC3B]">Invest</span>
+            </span>
           </Link>
         </div>
 
@@ -50,13 +60,13 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden flex flex-col items-center bg-[#FFBC3B] text-[#1A1A37] text-xl shadow-md animate-slide-down">
+        <div className="md:hidden flex font-semibold flex-col items-center bg-[#FFBC3B] text-[#1A1A37] text-xl shadow-md animate-slide-down">
           {navItems.map((item) => (
             <Link
               key={item.name}
               to={item.path}
               onClick={() => setIsOpen(false)} // ✅ close menu after navigation
-              className="w-full text-center py-3 hover:bg-[#FFD466] transition-colors duration-300"
+              className="w-full text-center py-8 hover:bg-[#FFD466] transition-colors duration-300"
             >
               {item.name}
             </Link>
