@@ -42,7 +42,7 @@ const Footer = () => {
 
   return (
     <footer className="relative bg-[#1A1A37] text-[#F5EBDD] w-full overflow-hidden">
-      
+
       {/* Amount Input Section */}
       <section className=" w-full bg-[#1A1A37] py-8 px-6 hidden md:flex justify-center items-center">
         <div
@@ -88,7 +88,7 @@ const Footer = () => {
       </div>
 
       {/* Footer Content */}
-      <div className="relative max-w-7xl mx-auto px-6 py-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
+      <div className="relative max-w-7xl mx-auto px-6 py-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
         {/* Brand Info */}
         <motion.div
           data-aos="fade-up"
@@ -97,19 +97,19 @@ const Footer = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-         <div className="flex items-center gap-1">
-  <img
-    src="/logo.png"
-    alt="Almashriq Invest Logo"
-    className="w-9 h-9 object-contain"
-  />
-  <h1 className="hidden sm:block text-white font-bold text-xl transform transition-transform duration-300 hover:scale-105 cursor-pointer">
-    Almashriq<span className="text-[#FFBC3B]">Invest</span>
-  </h1>
-</div>
+          <div className="flex items-center gap-1">
+            <img
+              src="/logo.png"
+              alt="Almashriq Invest Logo"
+              className="w-9 h-9 object-contain"
+            />
+            <h1 className="text-white font-bold text-lg md:text-xl transform transition-transform duration-300 hover:scale-105 cursor-pointer">
+              Almashriq<span className="text-[#FFBC3B]">Invest</span>
+            </h1>
+          </div>
 
           <p className="text-[#F5EBDD]/90 text-sm leading-relaxed max-w-xs">
-            Block No.1, Karachi <br /> 
+            Block No.1, Karachi <br />
             <span className="font-semibold text-[#FFFFFF]">WhatsApp: 03370338499</span> <br />
             support@almashriqinvest.com
           </p>
